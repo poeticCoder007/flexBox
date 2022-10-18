@@ -1,0 +1,78 @@
+.about {
+    width: 100vw;
+    height:auto;
+    padding: 25vh 10vw;
+    padding-bottom: 10vh;
+    display: flex;
+    flex-direction:row-reverse;
+    min-height: 90vh;
+    align-items:center;
+    justify-content:center;
+    gap: 10vh;
+    background-image: url(https://raw.githubusercontent.com/Devrajsinh03/Web-Projects/main/First%20Responsive%20Website/img/red.jpg) !important;
+}
+.contentBx {
+    display: flex;
+    flex-direction: column;
+}
+.contentBx h1 {
+    font-size: 3.5rem;
+}
+.form{
+    background-image: url(https://raw.githubusercontent.com/Devrajsinh03/Web-Projects/main/First%20Responsive%20Website/img/red.jpg) !important;
+    width: 50%;
+    background-size: cover; 
+}
+.form .inputBx{
+    margin-bottom: 40px;
+}
+.form .inputBx input{
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    padding:10px 0;
+    font-size:18px;
+    font-weight:300;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+.form .inputBx input::placeholder{
+    color: #fff;
+}
+.form .inputBx textarea{
+    width: 100%;
+    min-height: 150px;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    padding:10px 0;
+    font-size:18px;
+    font-weight:300;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+.form .inputBx textarea::placeholder{
+    color: #fff;
+}
+.form .inputBx input[type="submit"]{
+    width: 150px;
+    background: #fff;
+    color:#111;
+    cursor:pointer;
+    font-weight:400;
+}
+
+.hright{
+    flex:.5;
+}
+.hright img {
+    width: 35vw;
+}
+.contentBx, .form{
+    color: #fff;
+    flex:.5;
+    padding: 0;
+    width:35vw !important;
+    gap: 35px;
+}
