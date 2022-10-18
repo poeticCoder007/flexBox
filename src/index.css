@@ -1,0 +1,28 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 900px) {
+  .hcontainer, .acontainer {
+    padding: 0 !important;
+    padding: 10vh 0 !important;
+    flex-direction: column-reverse !important;
+    align-items:center;
+    justify-content: center;
+  }
+  .hright img, .aright img {
+    width: 69vw !important;
+  }
+  .hleft, .aleft{
+    width: 80% !important;
+    max-width: none;
+  }
+  .burger {
+    color: #fff;
+    font-size: 2.5rem;
+    display: inline-block;
+  }
+}

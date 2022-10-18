@@ -1,0 +1,34 @@
+.acontainer {
+    width: 100vw;
+    height:auto;
+    padding: 20vh 10vw;
+    min-height: 90vh;
+    display:flex;
+    flex-direction: row-reverse;
+    align-items:center;
+    justify-content:center;
+    gap: 10vh;
+}
+.aright{
+    flex:.5;
+}
+.aright img {
+    width: 35vw;
+}
+.aleft{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.aleft h1 {
+    font-size: 3.5rem;
+}
+.orange {
+    color: #ff8d2a;
+}
+.aleft p {
+    font-size: 1.25rem;
+    color: #555555;
+    text-align: justify;
+}

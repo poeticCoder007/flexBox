@@ -1,0 +1,53 @@
+.hcontainer {
+    
+    width: 100vw;
+    height:auto;
+    padding: 20vh 10vw;
+    padding-top: 15vh;
+    min-height: 90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap: 10vh;
+    background: #41295a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2F0743, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.hright{
+    min-width: 40vw;
+    height: 40vw;
+}
+/* .hright img {
+    width: 35vw;
+} */
+.hleft{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.hleft h1 {
+    color: white;
+    font-size: 3.5rem;
+}
+.orange {
+    color: #ff8d2a;
+}
+.hleft p {
+    font-size: 1.25rem;
+    color: #d9d9d9;
+    text-align: justify;
+}
+* {
+    box-sizing: border-box;
+}
+html,body,#root{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #f1f4f8;
+    position: fixed;
+}

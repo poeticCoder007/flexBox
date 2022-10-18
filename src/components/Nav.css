@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 15px 5vw;
+    padding-left: 10vw;
+    background: #41295a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2F0743, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.navlinks {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px; 
+}
+.navlinks a, .logo {
+    text-decoration: none;
+    color: #fff;
+    transition: ease-in-out 0.35s;
+}
+.logo {
+    font-size: 1.8rem;
+    font-family: sans-serif;
+    letter-spacing: 0.69px;
+}
+.btn button{
+    outline: none;
+    border: none;
+    padding: 7px 25px;
+    border-radius: 25px;
+    color: #fff;
+    background-color: #FF7900; 
+    transition: ease-in-out 0.45s;  
+}
+.btn button:hover {
+    background-color: #F06800;
+    transform: scale(1.15);
+}
+.navlinks a:hover {
+    color: #ff8d2a;
+    border-bottom: 1px solid #ff8d2a;
+}
+.burger {
+    color: #fff;
+    font-size: 2.5rem;
+    display: none !important;
+}
