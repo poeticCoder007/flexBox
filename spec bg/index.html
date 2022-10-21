@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <canvas id="canvas">
+        <h1>Hello</h1> 
+    </canvas>
+    <script>
+        var canvas = document.getElementById('canvas');
+        var ctx = canvas.getContext('2d');
+        ctx.font = 'italic 18px Arial';
+        ctx.textAlign = 'center';
+        ctx. textBaseline = 'middle';
+        ctx.fillStyle = 'red';  // a color name or by using rgb/rgba/hex values
+        ctx.fillText('Hello World!', 150, 50); // text and position
+    </script>
+    <script src="./main.js">
+    </script>
+</body>
+</html>
