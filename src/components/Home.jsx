@@ -28,15 +28,25 @@ function Word({ children, ...props }) {
     return <Text ref={ref} onPointerOver={over} onPointerOut={out} onClick={() => console.log('clicked')} {...props} {...fontProps} children={children} />
 }
 
-function Cloud({ count = 4, radius = 20 }) {
-  // Create a count x count random words with spherical distribution
+function Cloud({ count, radius }) {
+    // Create a count x count random words with spherical distribution
     const words = useMemo(() => {
     const temp = []
+    // tare navi kai skill nakhvi hoi to aya
+    /**
+     * words count * 4 hova joie to golo sarkho banse
+     */
+    const tag = ["html","css","js","python","java","c++","c","bootstrap","solidity","tailwind","flutter","web3","nodeJs","reactJs","expressJs","mongoose","figma"]
     const spherical = new THREE.Spherical()
     const phiSpan = Math.PI / (count + 1)
     const thetaSpan = (Math.PI * 2) / count
+    let k = 0; 
     for (let i = 1; i < count + 1; i++)
-      for (let j = 0; j < count; j++) temp.push([new THREE.Vector3().setFromSpherical(spherical.set(radius, phiSpan * i, thetaSpan * j)), randomWord()])
+        for (let j = 0; j < count; j++) 
+        {
+            temp.push([new THREE.Vector3().setFromSpherical(spherical.set(radius, phiSpan * i, thetaSpan * j)), tag[k]]);
+            k++;
+        }
     return temp
     }, [count, radius])
     return words.map(([pos, word], index) => <Word key={index} position={pos} children={word} />)
